@@ -59,7 +59,6 @@ body, html {
   align-items: center;
   justify-content: flex-start;
   overflow-y: auto;
-  display: flex; /* ❌ REMOVE this line */
 }
 
 
