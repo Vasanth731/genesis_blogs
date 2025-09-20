@@ -75,9 +75,9 @@ body, html {
 }
 
 /* Add a single separator only after the first link (About) */
-.dropdown-menu a:first-child {
+.dropdown-menu a:nth-of-type(2) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  margin-bottom: 20px;  /* Space between About and chapter links */
+  margin-bottom: 20px; /* Adds spacing after the separator */
 }
 
 /* Hero Sections */
