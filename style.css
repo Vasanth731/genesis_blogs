@@ -76,11 +76,11 @@ body, html {
 }
 
 /* Different background colors for each hero section */
-.hero1 { background-color: #00bcd4; }   /* Cyan */
-.hero2 { background-color: #ff9800; }   /* Orange */
-.hero3 { background-color: #4caf50; }   /* Green */
-.hero4 { background-color: #9c27b0; }   /* Purple */
-.hero5 { background-color: #f44336; }   /* Red */
+.hero1 { background-color: #1FA7B5; }   /* Cyan - 00bcd4 */
+.hero2 { background-color: #1F68B5; }   /* Orange - ff9800 */
+.hero3 { background-color: #5E47A6; }   /* Green - 4caf50 */
+.hero4 { background-color: #9047A6; }   /* Purple - 9c27b0 */
+.hero5 { background-color: #AD538C; }   /* Red - f44336 */
 
 /* About Section */
 .about {
