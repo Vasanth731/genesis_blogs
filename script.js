@@ -9,7 +9,7 @@ const menuIcon = document.getElementById("menuIcon");
 const dropdownMenu = document.getElementById("dropdownMenu");
 const dropdownLinks = dropdownMenu.querySelectorAll("a");
 
-// Toggle full-page dropdown when menu icon is clicked
+// Dropdown toggles only when menu icon is clicked
 menuIcon.addEventListener("click", () => {
   dropdownMenu.style.display =
     dropdownMenu.style.display === "flex" ? "none" : "flex";
@@ -21,6 +21,7 @@ dropdownLinks.forEach(link => {
     dropdownMenu.style.display = "none";
   });
 });
+
 
 
 
