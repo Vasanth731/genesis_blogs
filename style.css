@@ -65,8 +65,7 @@ body, html {
   text-decoration: none;
   width: 80%;
   text-align: center;
-  /* Remove border-bottom for all links */
-  border-bottom: none;
+  border-bottom: none;  /* Remove lines between chapter links */
   transition: background 0.3s, color 0.3s;
 }
 
@@ -75,12 +74,11 @@ body, html {
   color: #fff;
 }
 
-/* Add a single separator after the first link (About) */
+/* Add a single separator only after the first link (About) */
 .dropdown-menu a:first-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  margin-bottom: 20px;  /* Space before chapters */
+  margin-bottom: 20px;  /* Space between About and chapter links */
 }
-
 
 /* Hero Sections */
 .hero {
