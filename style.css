@@ -57,6 +57,7 @@ body, html {
   overflow-y: auto;
 }
 
+/* Dropdown links */
 .dropdown-menu a {
   color: white;
   font-size: 1.5em;
@@ -64,7 +65,8 @@ body, html {
   text-decoration: none;
   width: 80%;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* Remove border-bottom for all links */
+  border-bottom: none;
   transition: background 0.3s, color 0.3s;
 }
 
@@ -73,12 +75,12 @@ body, html {
   color: #fff;
 }
 
-.dropdown-menu hr {
-  width: 60%;
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  margin: 20px 0;
+/* Add a single separator after the first link (About) */
+.dropdown-menu a:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;  /* Space before chapters */
 }
+
 
 /* Hero Sections */
 .hero {
