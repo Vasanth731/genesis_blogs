@@ -3,6 +3,8 @@ function sayHello() {
     alert("Welcome to your GitHub-hosted site!");
 }
 */
+
+
 const menuIcon = document.getElementById("menuIcon");
 const dropdownMenu = document.getElementById("dropdownMenu");
 
@@ -17,6 +19,7 @@ window.addEventListener("click", function (e) {
     dropdownMenu.style.display = "none";
   }
 });
+
 
 
 
