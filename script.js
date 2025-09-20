@@ -8,17 +8,12 @@ function sayHello() {
 const menuIcon = document.getElementById("menuIcon");
 const dropdownMenu = document.getElementById("dropdownMenu");
 
+// Toggle full-page dropdown when menu icon is clicked
 menuIcon.addEventListener("click", () => {
   dropdownMenu.style.display =
     dropdownMenu.style.display === "flex" ? "none" : "flex";
 });
 
-// Close dropdown if clicked outside
-window.addEventListener("click", function (e) {
-  if (!menuIcon.contains(e.target) && !dropdownMenu.contains(e.target)) {
-    dropdownMenu.style.display = "none";
-  }
-});
 
 
 
