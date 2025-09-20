@@ -11,6 +11,10 @@ h1 {
 }
 */
 /* Reset & Base Styles */
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -53,10 +57,9 @@ body, html {
   background-color: #eee;
 }
 
-/* Hero Section */
+/* Hero Sections */
 .hero {
   height: 100vh;
-  background-color: cyan;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,6 +74,13 @@ body, html {
 .hero p {
   font-size: 1.2em;
 }
+
+/* Different background colors for each hero section */
+.hero1 { background-color: #00bcd4; }   /* Cyan */
+.hero2 { background-color: #ff9800; }   /* Orange */
+.hero3 { background-color: #4caf50; }   /* Green */
+.hero4 { background-color: #9c27b0; }   /* Purple */
+.hero5 { background-color: #f44336; }   /* Red */
 
 /* About Section */
 .about {
@@ -87,5 +97,6 @@ body, html {
   max-width: 700px;
   margin: 0 auto;
 }
+
 
 
