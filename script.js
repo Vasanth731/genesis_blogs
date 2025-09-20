@@ -10,7 +10,7 @@ const dropdownMenu = document.getElementById("dropdownMenu");
 
 menuIcon.addEventListener("click", () => {
   dropdownMenu.style.display =
-    dropdownMenu.style.display === "block" ? "none" : "block";
+    dropdownMenu.style.display === "flex" ? "none" : "flex";
 });
 
 // Close dropdown if clicked outside
@@ -19,7 +19,6 @@ window.addEventListener("click", function (e) {
     dropdownMenu.style.display = "none";
   }
 });
-
 
 
 
