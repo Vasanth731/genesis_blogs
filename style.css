@@ -84,14 +84,19 @@ body, html {
 
 /* About Section */
 .about {
-  background-color: #f9f9f9;
-  height: 100vh;                /* Full screen height */
-  display: flex;                /* Center content vertically & horizontally */
+  background-image: url('images/about_bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
-  padding: 20px;                 /* Small padding for spacing */
+  padding: 40px;
+  color: white;
+  position: relative;
 }
 .about h2 {
   font-size: 2em;
