@@ -103,7 +103,9 @@ body, html {
 .hero2 { background-color: #1f68b5; }   
 .hero3 { background-color: #5e47a6; }   
 .hero4 { background-color: #9047a6; }   
-.hero5 { background-color: #ad538c; }   
+.hero5 { background-color: #ad538c; }
+.hero6 { background-color: #c15f5c; }
+.hero7 { background-color: #c98243; }
 
 /* About Section */
 .about {
