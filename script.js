@@ -46,6 +46,22 @@ if (contributeIcon && contributeModal) {
   });
 }
 
+// Fade scroll-fade text in as its panel enters view, out as it leaves
+const scrollFadeEls = document.querySelectorAll(".scroll-fade");
+
+if (scrollFadeEls.length) {
+  const scrollFadeObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("in-view", entry.isIntersecting);
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  scrollFadeEls.forEach((el) => scrollFadeObserver.observe(el));
+}
+
 
 
 
