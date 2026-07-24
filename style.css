@@ -340,12 +340,41 @@ body, html {
 
 /* Blog Page */
 .blog-page {
+  position: relative;
   max-width: 800px;
   margin: 0 auto;
   padding: 100px 20px 60px;
   color: #222;
   line-height: 1.7;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
+/* Semi-opaque overlay behind the text so the background image doesn't
+   fight with readability, while still showing through around the copy. */
+.blog-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 0;
+}
+
+.blog-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Per-chapter background images */
+.blog-page.chapter1 { background-image: url('images/first.png'); }
+.blog-page.chapter2 { background-image: url('images/chap2.png'); }
+.blog-page.chapter3 { background-image: url('images/chap3.png'); }
+.blog-page.chapter4 { background-image: url('images/prenicene.png'); }
+.blog-page.chapter5 { background-image: url('images/ecu1.png'); }
+.blog-page.chapter6 { background-image: url('images/ecu2.png'); }
 
 .blog-page h1 {
   font-size: 2.2em;
