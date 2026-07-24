@@ -151,7 +151,11 @@ body, html {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  width: 90%;
+  max-width: 420px;
 }
 
 .social-icon {
