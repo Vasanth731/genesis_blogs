@@ -144,6 +144,33 @@ body, html {
   margin: 0 auto;
 }
 
+/* Social icons: bottom-center of the About section */
+.social-links {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 24px;
+}
+
+.social-icon {
+  color: white;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.social-icon svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
 /* Chapter Links (inside dropdown now) */
 .chapter-links {
   margin-top: 30px;
