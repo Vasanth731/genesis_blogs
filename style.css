@@ -192,13 +192,27 @@ body, html {
 .panel-5 { background-position: 0 -225vw; position: relative; }
 
 /* Different background colors for each hero section */
-.hero1 { background-color: #1fa7b5; }   
-.hero2 { background-color: #1f68b5; }   
-.hero3 { background-color: #5e47a6; }   
-.hero4 { background-color: #9047a6; }   
+.hero1 { background-color: #1fa7b5; }
+.hero2 { background-color: #1f68b5; }
+.hero3 { background-color: #5e47a6; }
+.hero4 { background-color: #9047a6; }
 .hero5 { background-color: #ad538c; }
 .hero6 { background-color: #c15f5c; }
 .hero7 { background-color: #c98243; }
+
+/* Per-chapter background images behind the heading on the blogs listing page */
+.hero2, .hero3, .hero4, .hero5, .hero6, .hero7 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+.hero2 { background-image: url('images/first.png'); }
+.hero3 { background-image: url('images/chap2.png'); }
+.hero4 { background-image: url('images/chap3.png'); }
+.hero5 { background-image: url('images/prenicene.png'); }
+.hero6 { background-image: url('images/ecu1.png'); }
+.hero7 { background-image: url('images/ecu2.png'); }
 
 /* Social icons: bottom-center of the About section (panel-5) */
 .social-links {
@@ -340,41 +354,13 @@ body, html {
 
 /* Blog Page */
 .blog-page {
-  position: relative;
   max-width: 800px;
   margin: 0 auto;
   padding: 100px 20px 60px;
   color: #222;
   line-height: 1.7;
   min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
 }
-
-/* Semi-opaque overlay behind the text so the background image doesn't
-   fight with readability, while still showing through around the copy. */
-.blog-page::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.85);
-  z-index: 0;
-}
-
-.blog-page > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* Per-chapter background images */
-.blog-page.chapter1 { background-image: url('images/first.png'); }
-.blog-page.chapter2 { background-image: url('images/chap2.png'); }
-.blog-page.chapter3 { background-image: url('images/chap3.png'); }
-.blog-page.chapter4 { background-image: url('images/prenicene.png'); }
-.blog-page.chapter5 { background-image: url('images/ecu1.png'); }
-.blog-page.chapter6 { background-image: url('images/ecu2.png'); }
 
 .blog-page h1 {
   font-size: 2.2em;
