@@ -191,6 +191,23 @@ body, html {
 .panel-4 { background-position: 0 -168.75vw; }
 .panel-5 { background-position: 0 -225vw; position: relative; }
 
+/* On tall/narrow (mobile) viewports, 100vw-wide sizing leaves the image
+   shorter than the section (100vh), exposing empty space below it.
+   Switch the basis to viewport height instead, so each panel's slice
+   always fills the section top-to-bottom and crops the sides evenly,
+   matching the "cover" crop already used on the blogs page. */
+@media (max-width: 900px), (orientation: portrait) {
+  .hero {
+    background-size: auto 500vh;
+    background-position-x: center;
+  }
+  .panel-1 { background-position: center 0; }
+  .panel-2 { background-position: center -100vh; }
+  .panel-3 { background-position: center -200vh; }
+  .panel-4 { background-position: center -300vh; }
+  .panel-5 { background-position: center -400vh; }
+}
+
 /* Different background colors for each hero section */
 /*.hero1 { background-color: #1fa7b5; }
 .hero2 { background-color: #1f68b5; }
