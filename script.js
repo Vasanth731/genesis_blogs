@@ -25,6 +25,27 @@ dropdownLinks.forEach(link => {
   link.addEventListener("click", closeMenu);
 });
 
+// Contribute modal (only present on the home page)
+const contributeIcon = document.getElementById("contributeIcon");
+const contributeModal = document.getElementById("contributeModal");
+const contributeModalClose = document.getElementById("contributeModalClose");
+
+if (contributeIcon && contributeModal) {
+  contributeIcon.addEventListener("click", () => {
+    contributeModal.classList.add("active");
+  });
+
+  contributeModalClose.addEventListener("click", () => {
+    contributeModal.classList.remove("active");
+  });
+
+  contributeModal.addEventListener("click", (e) => {
+    if (e.target === contributeModal) {
+      contributeModal.classList.remove("active");
+    }
+  });
+}
+
 
 
 
