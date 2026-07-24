@@ -27,6 +27,15 @@ body, html {
   scroll-behavior: smooth;
 }
 
+/* Site logo: fixed to the viewport so it stays put while the page scrolls */
+.site-logo {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  height: 50px;
+  z-index: 400;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -157,6 +166,7 @@ body, html {
 /* Scroll-triggered fade in/out text (panel-3, panel-4) */
 .scroll-fade {
   opacity: 0;
+  font-size: 2em;
   transition: opacity 1s ease;
 }
 
@@ -179,7 +189,7 @@ body, html {
 .panel-2 { background-position: 0 -56.25vw; }
 .panel-3 { background-position: 0 -112.5vw; }
 .panel-4 { background-position: 0 -168.75vw; }
-.panel-5 { background-position: 0 -225vw; }
+.panel-5 { background-position: 0 -225vw; position: relative; }
 
 /* Different background colors for each hero section */
 .hero1 { background-color: #1fa7b5; }   
@@ -190,33 +200,7 @@ body, html {
 .hero6 { background-color: #c15f5c; }
 .hero7 { background-color: #c98243; }
 
-/* About Section */
-.about {
-  background-image: url('images/background_about.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 40px;
-  color: white;
-  position: relative;
-}
-.about h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-.about p {
-  font-size: 1.1em;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* Social icons: bottom-center of the About section */
+/* Social icons: bottom-center of the About section (panel-5) */
 .social-links {
   position: absolute;
   bottom: 30px;
