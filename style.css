@@ -192,13 +192,13 @@ body, html {
 .panel-5 { background-position: 0 -225vw; position: relative; }
 
 /* Different background colors for each hero section */
-.hero1 { background-color: #1fa7b5; }
+/*.hero1 { background-color: #1fa7b5; }
 .hero2 { background-color: #1f68b5; }
 .hero3 { background-color: #5e47a6; }
 .hero4 { background-color: #9047a6; }
 .hero5 { background-color: #ad538c; }
 .hero6 { background-color: #c15f5c; }
-.hero7 { background-color: #c98243; }
+.hero7 { background-color: #c98243; } */
 
 /* Per-chapter background images behind the heading on the blogs listing page */
 .hero2, .hero3, .hero4, .hero5, .hero6, .hero7 {
