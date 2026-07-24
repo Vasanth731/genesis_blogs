@@ -143,7 +143,7 @@ body, html {
    background-size is expressed in vw so the image aspect ratio (16:9)
    never distorts regardless of viewport size. */
 .hero {
-  background-image: url('images/example.png');
+  background-image: url('images/genesis_website_home.png'); 
   background-repeat: no-repeat;
   background-size: 100vw 281.25vw; /* 5 panels tall, matches image aspect */
   color: #fff;
