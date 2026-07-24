@@ -9,17 +9,20 @@ const menuIcon = document.getElementById("menuIcon");
 const dropdownMenu = document.getElementById("dropdownMenu");
 const dropdownLinks = dropdownMenu.querySelectorAll("a");
 
+function closeMenu() {
+  menuIcon.classList.remove("active");
+  dropdownMenu.classList.remove("active");
+}
+
 // Dropdown toggles only when menu icon is clicked
 menuIcon.addEventListener("click", () => {
-  dropdownMenu.style.display =
-    dropdownMenu.style.display === "flex" ? "none" : "flex";
+  menuIcon.classList.toggle("active");
+  dropdownMenu.classList.toggle("active");
 });
 
 // Hide dropdown when any link inside it is clicked
 dropdownLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    dropdownMenu.style.display = "none";
-  });
+  link.addEventListener("click", closeMenu);
 });
 
 
