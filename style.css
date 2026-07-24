@@ -92,6 +92,23 @@ body, html {
   font-size: 1.2em;
 }
 
+/* Hero panels: each is a 1920x1080 slice of images/example.png, stacked
+   vertically so the page's normal scroll reveals one color per panel.
+   background-size is expressed in vw so the image aspect ratio (16:9)
+   never distorts regardless of viewport size. */
+.hero {
+  background-image: url('images/example.png');
+  background-repeat: no-repeat;
+  background-size: 100vw 281.25vw; /* 5 panels tall, matches image aspect */
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+.panel-1 { background-position: 0 0; }
+.panel-2 { background-position: 0 -56.25vw; }
+.panel-3 { background-position: 0 -112.5vw; }
+.panel-4 { background-position: 0 -168.75vw; }
+.panel-5 { background-position: 0 -225vw; }
+
 /* Different background colors for each hero section */
 .hero1 { background-color: #1fa7b5; }   
 .hero2 { background-color: #1f68b5; }   
