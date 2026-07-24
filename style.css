@@ -213,6 +213,22 @@ body, html {
   text-decoration: underline;
 }
 
+.download-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 14px 24px;
+  background-color: #1f68b5;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #17517f;
+}
+
 
 
 
